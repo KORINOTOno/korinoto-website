@@ -1,8 +1,11 @@
-/* こりのとの工房 - スタイル */
+/* Google Fonts を読み込む */
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
 
 body {
     font-family: 'Mochiy Pop One', sans-serif;
     background-color: #f5f0e1;
+    background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png'); /* 木目背景 */
+    background-repeat: repeat;
     color: #5a3e2b;
     margin: 0;
     padding: 0;
@@ -33,52 +36,18 @@ nav ul li a {
     font-weight: bold;
 }
 
-section {
-    padding: 50px;
-    text-align: center;
-}
-
-#home {
-    background-color: #fceabb;
-    padding: 60px 20px;
-}
-
-#products {
-    background-color: #fff;
-}
-
-.product img {
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-#contact form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: auto;
-}
-
-#contact input, #contact textarea {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
+/* ボタンをもっと可愛く */
 button {
     background-color: #d1a375;
     color: white;
     padding: 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px; /* 丸みをつける */
     font-size: 18px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
-footer {
-    background-color: #5a3e2b;
-    color: white;
-    text-align: center;
-    padding: 10px;
+button:hover {
+    background-color: #b5835a;
 }
